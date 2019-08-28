@@ -1,0 +1,43 @@
+<html>
+<header>
+  <title>eStore US Virtual Assistant</title>
+
+  <script src="https://web-chat.nativechat.com/1.29.0/sdk/nativechat.js"></script>
+  <link href="https://web-chat.nativechat.com/1.29.0/sdk/nativechat.css" rel="stylesheet" type="text/css">
+
+</header>
+
+<body>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <div id="chatContainer" style="width:100%;height:100%;background-color:#e4e7eb"></div>
+
+  <script>
+    var chatSettings = {
+      bot: {
+        avatarUrl: "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/8_avatar-64.png",
+        id: "5d5542cbcd6ae22bd13d1f09"
+      },
+      channel: {
+	  id: "4ee50330-08e8-468d-b8b8-17a0b6d24999",
+      token: "5b4fb6f6-c448-4362-ba04-bb3215a24536"
+      },
+      session: {
+        clear: true,
+      }
+    };
+    window.NativeChat.load({
+      id: "chat-session",
+      origin: "",
+
+      display: {
+        mode: "inline",
+        containerId: "chatContainer"
+      },
+
+      chat: chatSettings
+    });
+
+  </script>
+</body>
+
+</html>
